@@ -28,28 +28,12 @@ Este resultado confirma que a conexão com o servidor ainda está viva. A seguir
 
 >>set test "It's working!"
 
-# OBS
-## Installar extenção python para executar codigo (.py)
+## Imagen Docker:
+>>docker run -p 6379:6379 --name redis-mod redislabs/redismod
 
->>pip install fake
+>>docker exec -it redis-mod redis-cli 
 
->>pip instalar faker-vehicle
-
->>pip instalar python-time
-
->>pip instalar random2
-
->>pip instalar redis
-
->>pip instalar json2json
-
-### Executar
-ep3_producer.py (para alimentar as informacoes)
-
-ep3_consumer (para teste de conexao)
-
-conta_veiculo_2 (puxar consulta dos dados gravados)
-
+    Teste de conexao
 
 -----------------------------------------------
 ### Documentacao.
@@ -58,9 +42,3 @@ https://redis.io/docs/
 https://redis.io/
 
 https://try.redis.io/
-
-https://pypi.org/
-
-https://pypi.org/project/fake/
-
-https://pypi.org/project/faker-vehicle/
